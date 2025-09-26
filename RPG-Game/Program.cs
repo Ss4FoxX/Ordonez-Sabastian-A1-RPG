@@ -108,6 +108,7 @@ else if (Answer == "Right")
         }
         else if (Answer == "Do-not")
         {
+            if (Answer == "Run")
             {
                 Console.WriteLine("you choose to run down the halls. you hear it stomping after you, swearing it's laughing.");
                 Console.WriteLine("The halls quickly become an unending maze, and you begin to tire, the beast has not, however.");
