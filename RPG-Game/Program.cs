@@ -1,10 +1,11 @@
 ﻿using System.Numerics;
 
-//actual game here!
+Boolean keystone = false;
+
 Console.WriteLine("You awaken with a crash, you dropped from the sky into a large planetarian style greenhouse.");
 Console.WriteLine("To the left is a door, all colour seems to fade near it. ");
-Console.WriteLine("The middle path holds a large, sprawling tree that reaches beyond the glass panes.");
-Console.WriteLine("Finally, to the right what appears to be lights and an exit to the emediet area.");
+Console.WriteLine("The Right path holds a large, sprawling tree that reaches beyond the glass panes.");
+Console.WriteLine("will you go Left or Right?");
 string Answer = Console.ReadLine();
 
 //to Bunker and her insanity
@@ -61,11 +62,80 @@ if (Answer == "Left")
     {
         //Evil forearm bone stinger
         Console.WriteLine("As you turn back, not even a step away a large stinger pierces through your stomoach.");
-        Console.WriteLine("you have died to Bunker.");
+        Console.WriteLine("you have died to Bunker. (victimless End)");
     }
 }
-else if (Answer == "Middle")
+else if (Answer == "Right")
 {
-    Console.WriteLine("");
+    //Curious Light shows the ways
+    Console.WriteLine("Heading towards the gaint tree, a yellow light suddenly reveals another set of choices");
+    Console.WriteLine("the door to the building infront of you, the light appears to pull the planks keeping it shut off, opening the path.");
+    Console.WriteLine("the light reveals a door in the bark of the tree, a possible escape perhaps?");
+    Console.WriteLine("do you head into the Building, or try the Door?");
+    Answer = Console.ReadLine();
+    if (Answer == "Building")
+    {
+        Console.WriteLine("Entering the building, every wall is scratched and cracking.");
+        Console.WriteLine("while walking, a star like object begins to shine.");
+        Console.WriteLine("will you pick it up? (Pick-up , Do-not)");
+        Answer = Console.ReadLine();
+        if (Answer == "Pick-up")
+        {
+            Console.WriteLine("You pick up the shining stone");
+            Console.WriteLine("before another second passes, you hear something behind you,");
+            Console.WriteLine("Looking back, is a large, multi limbed, amalgamation. and every eye it has is staring at you");
+            Console.WriteLine("while slow, you still only have 2 options, Run down the hallway, or Return to the door.");
+            Answer = Console.ReadLine();
+            if (Answer == "Run")
+            {
+                Console.WriteLine("you choose to run down the halls. you hear it stomping after you, swearing it's laughing.");
+                Console.WriteLine("The halls quickly become an unending maze, and you begin to tire, the beast has not, however.");
+                Console.WriteLine("as you slow, you feel it grab you. in an instant you black out. when you wake, you can't move your limbs, at least not willingly.");
+                Console.WriteLine("You spot another poor soul in this mess, and is forced to begin chasing.");
+                Console.WriteLine("Amalgamated End");
+            }
+
+            else if (Answer == "Return")
+            {
+                Console.WriteLine("you rush to the door, you try the handle but it doesn't budge.");
+                Console.WriteLine("Noticing the hole, you shove the Star Stone into the hole. The lumbering beast rapidy approches");
+                Console.WriteLine("the door swings open, you rush in, and you hear nothing but the birds at the window.");
+                Console.WriteLine("You're in your home, just infront of the front door.");
+                Console.WriteLine("true Escape Ending");
+
+            }
+
+        }
+        else if (Answer == "Do-not")
+        {
+            {
+                Console.WriteLine("you choose to run down the halls. you hear it stomping after you, swearing it's laughing.");
+                Console.WriteLine("The halls quickly become an unending maze, and you begin to tire, the beast has not, however.");
+                Console.WriteLine("as you slow, you feel it grab you. in an instant you black out. when you wake, you can't move your limbs, at least not willingly.");
+                Console.WriteLine("You spot another poor soul in this mess, and is forced to begin chasing.");
+                Console.WriteLine("Amalgamated End");
+            }
+
+            else if (Answer == "Return")
+            {
+                Console.WriteLine("you rush to the door, you try the handle but it doesn't budge.");
+                Console.WriteLine("Noticing the hole, you shove the Star Stone into the hole. The lumbering beast rapidy approches");
+                Console.WriteLine("the door swings open, you rush in, and you hear nothing but the birds at the window.");
+                Console.WriteLine("You're in your home, just infront of the front door.");
+                Console.WriteLine("true Escape Ending");
+
+            }
+
+        }
+
+    }
+
+    else if (Answer == "Door")
+    {
+            Console.WriteLine("You head to the door, and try to open it, the door doesn't budge, locked the ''Keyhole'' apears to be a star.");
+            Console.WriteLine("Before you can notice any other details, you hear clicking. the floor breaks from under you.");
+            Console.WriteLine("You fell into nothing (Voidbound End)");
+    }
+    
 }
 string ender = Console.ReadLine();
